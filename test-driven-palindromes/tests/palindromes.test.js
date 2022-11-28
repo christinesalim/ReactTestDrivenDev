@@ -6,16 +6,20 @@ describe('palindromes()', () => {
   });
 
   it('ignores case', () => {
-      expect(palindromes('Wow')).toEqual(['wow']);
-  })
+    expect(palindromes('Wow')).toEqual(['wow']);
+  });
 
   it('ignores punctuation', () => {
     expect(palindromes('yo, banana boy!')).toEqual(['yobananaboy']);
   });
-  
+
   it('detects multi-word palindromes', () => {
     expect(palindromes('A man, a plan, a canal, Panama')).toEqual([
       'amanaplanacanalpanama',
     ]);
   });
+
+  it('returns an empty array when given no palindroms', () => {
+    expect(palindromes('tic tac toe')).toEqual([]);
+  })
 });
