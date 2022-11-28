@@ -1,10 +1,11 @@
-module.exports = function() {
+//wallaby.js
+module.exports = function() { 
   return {
-    testFramework: 'jest', //use jest framework
+    testFramework: 'jest', // 1
     env: {
-      type: 'node', //run in Node environment
+      type: 'node', // 2
     },
-    tests: ['tests/**/*.test.js'], 
+    tests: ['tests/**/*.test.js'], // 3
     files: ['**/*.js', '!node_modules/**/*', '!**/*.test.js', '!**/.*'], // 4
   };
 };
