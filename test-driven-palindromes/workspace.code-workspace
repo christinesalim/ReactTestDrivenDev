@@ -1,0 +1,19 @@
+{
+  "folders": [
+    {
+      "path": ".."
+    },
+    {
+      "name": "test-driven-palindromes",
+      "path": "."
+    }
+  ],
+  "settings": {
+    "files.exclude": {
+      "node_modules": true,
+      "package-lock.json": true
+    },
+    "editor.fontSize": 16,
+    "editor.tabSize": 2
+  }
+}
